@@ -37,7 +37,7 @@ package go.lang;
 /// implementations for drilling into array indexes value types in their own right.
 ///
 public sealed interface Value
-        permits Array, Complex128, Complex64, float32, float64, Function, int16, int32, int64, int8, Interface, Pointer, Slice, string, Struct, bool, uint16, uint32, uint64, uint8 {
+        permits Array, complex128, complex64, float32, float64, Function, int16, int32, int64, int8, Interface, Pointer, Slice, string, Struct, bool, uint16, uint32, uint64, uint8 {
 
     /// Returns a deep copy of this value.
     ///
