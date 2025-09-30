@@ -1,13 +1,20 @@
 package struct_fields;
 
-import module joe.lang;
+import module go.lang;
+import go.lang.int32;
+import go.lang.Struct;
 
 public final class Vertex implements Struct {
-    public Int32 X;
-    public Int32 Y;
+    public int32 X;
+    public int32 Y;
 
     public Vertex() {
-        this.X = new Int32();
-        this.Y = new Int32();
+        this.X = new int32();
+        this.Y = new int32();
+    }
+
+    @Override
+    public Vertex copy() {
+        return this;
     }
 }
